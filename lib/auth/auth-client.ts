@@ -13,3 +13,5 @@ const getBaseUrl = () => {
 export const authClient = createAuthClient({
   baseURL: getBaseUrl()
 });
+
+export const { signIn, signUp, signOut, useSession } = authClient;

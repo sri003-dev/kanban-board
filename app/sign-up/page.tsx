@@ -25,7 +25,7 @@ export default function SignUp() {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
   const router = useRouter();
-  async function handleSubmit(e){
+  async function handleSubmit(e: React.SubmitEvent){
     e.preventDefault();
     setError("");
     setLoading(true);
